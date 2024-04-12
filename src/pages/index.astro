@@ -1,13 +1,15 @@
 ---
 import "../styles/index.scss";
-import { Layout } from "@carbon/react/lib/components/Layout";
-import { Button } from "@carbon/react";
+import Layout from "../layouts/Layout.astro";
+import { Button, Grid, Column } from "@carbon/react";
+import ButtonWrapper from "../components/ButtonWrapper.astro";
 ---
 
 <!-- <div>hi mom, this div needs to be here in order to work</div> -->
-<Button client:load>Carbon Button</Button>
-<!-- <button>hi mom</button> -->
+<Layout title="hi mom">
+  <!-- <Button>Carbon Button</Button> -->
+  <ButtonWrapper/>
+</Layout>
 
-<!-- <style lang="scss">
-  @use "../styles/index.scss";
-</style> -->
+<!-- <ButtonWrapper></ButtonWrapper> -->
+<!-- <button>hi mom</button> -->
